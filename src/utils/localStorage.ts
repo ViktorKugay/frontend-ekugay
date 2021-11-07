@@ -1,3 +1,4 @@
+/* eslint-disable */
 export function localStorageSet(key: string, value: string): void {
   try {
     localStorage.setItem(key, value);
