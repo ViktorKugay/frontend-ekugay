@@ -2,11 +2,11 @@
 @import '../../../styles/media.css';
 
 .root {
-    width: 100%;
-    margin: 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 40px 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .typography {
@@ -14,7 +14,7 @@
 }
 
 .paper {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 .title {
@@ -22,6 +22,6 @@
 }
 
 .image {
-    width: 100%;
-    border-radius: 6px 6px 0 0;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
 }

@@ -3,13 +3,12 @@
 
 .root {
   position: relative;
-  padding: $indent-xxxl 0;
   margin-top: $indent-xxxl;
+  padding: $indent-xxxl 0;
 
-  @media(--tablet-large) {
+  @media (--tablet-large) {
     margin-top: 0;
   }
-
 
   &::after {
     position: absolute;

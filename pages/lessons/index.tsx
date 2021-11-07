@@ -1,7 +1,7 @@
-import { localStorageGet } from '@utils/localStorage';
+import {localStorageGet} from '@utils/localStorage';
 
-import { useRouter } from 'next/router'
-import { useEffect } from 'react';
+import {useRouter} from 'next/router';
+import {useEffect} from 'react';
 
 export default function MainRoute() {
   const router = useRouter();
@@ -14,7 +14,7 @@ export default function MainRoute() {
     } else {
       router.push('/groups');
     }
-  }, [router])
+  }, [router]);
 
   return null;
 }
