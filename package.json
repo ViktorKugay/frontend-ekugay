@@ -13,12 +13,11 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "yarn build:groups && yarn build:lessons && next build",
     "start": "next start",
     "export": "next export",
     "build:groups": "ts-node scripts/build-groups.ts",
     "build:lessons": "ts-node scripts/build-lessons.ts",
-    "build:tasks": "ts-node scripts/build-tasks.ts",
     "typecheck": "tsc --noEmit",
     "test": "jest --passWithNoTests",
     "test:coverage": "jest --coverage",
