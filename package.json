@@ -1,0 +1,119 @@
+{
+  "name": "ekugay.ru",
+  "version": "1.0.0",
+  "description": "Репозиторий для сайта E.E. Кугай",
+  "main": "index.js",
+  "repository": "https://github.com/ViktorKugay/frontend-ekugay.git",
+  "author": "v.kugay",
+  "email": "v.e.kugay@gmail.com",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=12.22.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "build:groups": "ts-node scripts/build-groups.ts",
+    "build:lessons": "ts-node scripts/build-lessons.ts",
+    "build:tasks": "ts-node scripts/build-tasks.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "jest --passWithNoTests",
+    "test:coverage": "jest --coverage",
+    "lint": "run-p lint:*",
+    "lint:css": "stylelint \"src/**/*.scss\" --config .stylelintrc-format",
+    "lint:js": "eslint 'src/**/*.{ts,tsx,js}' --cache",
+    "format": "run-p format:*",
+    "format:js": "prettier --write \"src/**/*.{ts,tsx,js}\" \"pages/**/*.{ts,tsx,js}\"",
+    "format:json": "prettier --write \"src/**/*.json\"",
+    "format:css": "prettier --write \"src/**/*.scss\" && stylelint --fix \"src/**/*.scss\" --config .stylelintrc-format"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "HOOK=true yarn typecheck && yarn test",
+      "post-checkout": "yarnhook",
+      "post-merge": "yarnhook",
+      "post-rewrite": "yarnhook"
+    }
+  },
+  "lint-staged": {
+    "*.css": [
+      "prettier --write",
+      "stylelint --fix --config ./.stylelintrc-format"
+    ],
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{md,json}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@emotion/react": "11.5.0",
+    "@emotion/styled": "11.3.0",
+    "@mui/icons-material": "5.0.5",
+    "@mui/material": "5.0.6",
+    "@netlify/plugin-nextjs": "3.9.2",
+    "axios": "0.23.0",
+    "classnames": "2.3.1",
+    "effector": "22.1.2",
+    "effector-react": "22.0.4",
+    "faker": "^5.5.3",
+    "framer-motion": "^5.2.1",
+    "front-matter": "4.0.2",
+    "lodash": "4.17.21",
+    "next": "11.1.2",
+    "notistack": "2.0.3",
+    "postcss-custom-media": "8.0.0",
+    "postcss-custom-properties": "12.0.0",
+    "postcss-flexbugs-fixes": "5.0.2",
+    "postcss-import": "14.0.2",
+    "postcss-nested": "5.0.6",
+    "postcss-preset-env": "6.7.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hook-form": "7.19.0",
+    "sass": "1.42.1",
+    "showdown": "1.9.1",
+    "typescript": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/classnames": "2.3.1",
+    "@types/faker": "5.5.9",
+    "@types/jest": "27.0.2",
+    "@types/lodash": "4.14.175",
+    "@types/node": "16.10.3",
+    "@types/react": "17.0.27",
+    "@types/showdown": "1.9.4",
+    "@typescript-eslint/eslint-plugin": "5.0.0",
+    "@typescript-eslint/parser": "5.0.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-react-app": "6.0.0",
+    "eslint-plugin-flowtype": "6.1.0",
+    "eslint-plugin-import": "2.25.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.26.1",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "husky": "7.0.2",
+    "jest": "27.2.5",
+    "lint-staged": "11.2.3",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.4.1",
+    "stylelint": "13.13.1",
+    "stylelint-at-rule-no-children": "0.3.1",
+    "stylelint-config-prettier": "9.0.2",
+    "stylelint-config-recommended": "5.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.4.0",
+    "stylelint-media-use-custom-media": "2.0.0",
+    "stylelint-order": "4.1.0",
+    "stylelint-value-no-unknown-custom-properties": "3.0.0",
+    "ts-jest": "27.0.5",
+    "ts-node": "10.3.0",
+    "yarnhook": "0.5.1"
+  }
+}

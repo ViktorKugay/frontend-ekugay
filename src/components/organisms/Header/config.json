@@ -1,0 +1,15 @@
+{
+  "Routes": [
+    {
+      "title": "Группы",
+      "href": "/groups"
+    },
+    {
+      "title": "Уроки",
+      "href": "/lessons"
+    }
+  ],
+  "Logo": {
+    "src": "/logo.png"
+  }
+}

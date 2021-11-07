@@ -1,0 +1,13 @@
+@import '../../../styles/variables.scss';
+
+.root {
+  transition: all $duration $timing;
+
+  &:hover {
+    color: $color-main-default;
+  }
+
+  &:active {
+    color: $color-main-active;
+  }
+}

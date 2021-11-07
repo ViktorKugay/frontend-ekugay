@@ -1,0 +1,20 @@
+{
+  "Footer": {
+    "links": [
+      {
+        "title": "ВК",
+        "href": "https://vk.com/rock.edu.orel"
+      },
+      {
+        "title": "Made by Viktor Kugay",
+        "href": "https://www.facebook.com/viktor.kugay"
+      }
+    ],
+    "license": {
+      "title": "© 2021\u00a0—\u00a0"
+    }
+  },
+  "Logo": {
+    "src": "/logo.png"
+  }
+}

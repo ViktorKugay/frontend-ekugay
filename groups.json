@@ -1,0 +1,56 @@
+[
+  {
+    "image": "/groups/individual_1.png",
+    "title": "Индивидуальная первый год обучения",
+    "description": "Супер ребята, которым предстоит увлекательное путешествие в мир музыки",
+    "lessons": [
+      "sound_duration"
+    ],
+    "slug": "individual_1"
+  },
+  {
+    "image": "/groups/individual_2.png",
+    "title": "Индивидуальная второй год обучения",
+    "description": "Невероятные ученики, которые уже умеют играть на музыкальных инструментах и хотят прокачаться еще",
+    "lessons": [
+      "practice_barre_1"
+    ],
+    "slug": "individual_2"
+  },
+  {
+    "image": "/groups/year_1.png",
+    "title": "Групповая первый год обучения",
+    "description": "Бесстрашные начинающие падаваны, для которых нет никаких преград",
+    "lessons": [
+      "sound_duration"
+    ],
+    "slug": "year_1"
+  },
+  {
+    "image": "/groups/year_2.png",
+    "title": "Групповая второй год обучения",
+    "description": "Сильные и выносливые студенты, для которых музыка уже не пустой звук",
+    "lessons": [
+      "major_minor"
+    ],
+    "slug": "year_2"
+  },
+  {
+    "image": "/groups/year_3.png",
+    "title": "Групповая третий год обучения",
+    "description": "Тертые калачи, которые могут и песню с друзьями сыграть, и на сцене не боятся выступить",
+    "lessons": [
+      "sound_duration"
+    ],
+    "slug": "year_3"
+  },
+  {
+    "image": "/groups/year_4.png",
+    "title": "Групповая четвертый год обучения",
+    "description": "Мировые звезды, готовы выступать на одной сцене с Metallica и Dream Theater",
+    "lessons": [
+      "sound_duration"
+    ],
+    "slug": "year_4"
+  }
+]

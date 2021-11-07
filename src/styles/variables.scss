@@ -1,0 +1,32 @@
+$indent-xxs: 4px;
+$indent-xs: 8px;
+$indent-s: 12px;
+$indent-m: 18px;
+$indent-l: 24px;
+$indent-xl: 32px;
+$indent-xxl: 40px;
+$indent-xxxl: 48px;
+
+$color-main-default: #96beea;
+$color-main-active: #77a6de;
+
+$duration: .2s;
+$timing: ease-in-out;
+
+$header-height: 68px;
+
+:export {
+  indent-xxs: $indent-xxs;
+  indent-xs: $indent-xs;
+  indent-s: $indent-s;
+  indent-m: $indent-m;
+  indent-l: $indent-l;
+  indent-xl: $indent-xl;
+  indent-xxl: $indent-xxl;
+  indent-xxxl: $indent-xxxl;
+  color-main-default: $color-main-default;
+  color-main-active: $color-main-active;
+  duration: $duration;
+  timing: $timing;
+  header-height: $header-height;
+}

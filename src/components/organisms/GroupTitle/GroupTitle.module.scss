@@ -1,0 +1,12 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/media.css';
+
+.root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    margin-bottom: $indent-l;
+}

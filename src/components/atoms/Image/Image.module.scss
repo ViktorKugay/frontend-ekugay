@@ -1,0 +1,14 @@
+.root {
+  position: relative;
+}
+
+.root > div {
+  /* stylelint-disable declaration-no-important */
+  position: relative !important;
+}
+
+.image {
+  position: relative !important;
+  width: auto !important;
+  height: auto !important;
+}

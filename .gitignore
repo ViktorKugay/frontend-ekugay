@@ -1,0 +1,15 @@
+.eslintcache
+.vscode
+.next
+.env
+.env.build
+.env.local
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+out_functions
+out_publish
+404.html
+content.json
+posts.json

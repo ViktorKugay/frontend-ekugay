@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/media.css';
+
+.root {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (--tablet) {
+    flex-direction: row;
+  }
+}
+
+.logo {
+  width: 200px;
+  height: 44px;
+}
+
+.link {
+  padding: $indent-s;
+}
