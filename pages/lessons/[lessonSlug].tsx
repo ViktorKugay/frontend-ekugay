@@ -8,7 +8,10 @@ import ErrorPageNext from 'next/error';
 import lessons from '../../lessons.json';
 
 interface Props {
+  slug: string;
   title: string;
+  description: string;
+  image: string;
   html: string;
 }
 
@@ -20,7 +23,7 @@ export default function LessonRoute(props?: Props): JSX.Element {
   return (
     <MuiThemeProvider>
       <StyledEngineProvider>
-        <LessonHead />
+        <LessonHead {...props} />
         <LessonBody {...props} />
       </StyledEngineProvider>
     </MuiThemeProvider>
