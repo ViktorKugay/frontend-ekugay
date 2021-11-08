@@ -9,6 +9,19 @@ interface Props {
   description: string;
 }
 
-export function LessonHead({image, title, description, slug}: Props): JSX.Element {
-  return <PageHead {...c.LessonHead} image={image} title={title} description={description} url={`https://ekugay.ru/lessons/${slug}`} />;
+export function LessonHead({
+  image,
+  title,
+  description,
+  slug,
+}: Props): JSX.Element {
+  return (
+    <PageHead
+      {...c.LessonHead}
+      image={image}
+      title={title}
+      description={description}
+      url={`https://ekugay.ru/lessons/${slug}`}
+    />
+  );
 }
