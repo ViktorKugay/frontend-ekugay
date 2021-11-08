@@ -2,6 +2,21 @@ import {PageHead} from '../../atoms/PageHead/PageHead';
 
 import c from './config.json';
 
-export function GroupHead(): JSX.Element {
-  return <PageHead {...c.GroupHead} />;
+interface Props {
+  slug: string;
+  image: string;
+  title: string;
+  description: string;
+}
+
+export function GroupHead({image, title, description, slug}: Props): JSX.Element {
+  return (
+    <PageHead 
+    {...c.GroupHead} 
+    image={image}
+    title={title}
+    description={description}
+    url={`https://ekugay.ru/groups/${slug}`}
+    />
+    );
 }

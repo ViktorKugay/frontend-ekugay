@@ -21,7 +21,7 @@ export default function LessonRoute(props?: Props): JSX.Element {
   return (
     <MuiThemeProvider>
       <StyledEngineProvider>
-        <GroupHead />
+        <GroupHead {...props.group} />
         <GroupBody {...props} />
       </StyledEngineProvider>
     </MuiThemeProvider>
