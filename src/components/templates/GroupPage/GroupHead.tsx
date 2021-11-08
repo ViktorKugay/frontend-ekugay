@@ -9,14 +9,19 @@ interface Props {
   description: string;
 }
 
-export function GroupHead({image, title, description, slug}: Props): JSX.Element {
+export function GroupHead({
+  image,
+  title,
+  description,
+  slug,
+}: Props): JSX.Element {
   return (
-    <PageHead 
-    {...c.GroupHead} 
-    image={image}
-    title={title}
-    description={description}
-    url={`https://ekugay.ru/groups/${slug}`}
+    <PageHead
+      {...c.GroupHead}
+      image={image}
+      title={title}
+      description={description}
+      url={`https://ekugay.ru/groups/${slug}`}
     />
-    );
+  );
 }
