@@ -1,8 +1,8 @@
 ---
 image: /groups/year_2.png
-title: Групповая второй год обучения
+title: Групповой | Второй год обучения
 description: Сильные и выносливые студенты, для которых музыка уже не пустой звук
 lessons: [
-  major_minor  
+  major_minor
 ]
 ---
