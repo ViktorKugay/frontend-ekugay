@@ -10,7 +10,12 @@ export interface Props {
 
 export function LessonsList({items}: Props): JSX.Element {
   const renderLessonCard = ({description, title, image, slug}: Lesson) => (
-    <Link key={slug} type="internal" href={`/lessons/${slug}`}>
+    <Link
+      key={slug}
+      type="internal"
+      href={`/lessons/${slug}`}
+      className={s.link}
+    >
       <Paper className={s.paper}>
         <Image type="internal" src={image} className={s.image} />
         <div className={s.typography}>
