@@ -41,7 +41,7 @@ export function Link(props: PropsWithChildren<LinkProps>): JSX.Element {
   if (type === 'internal') {
     return (
       <NextLink href={href} as={props.as}>
-        <a onClick={handleClick} className={cn(className, s.root)}>
+        <a role="link" onClick={handleClick} className={cn(className, s.root)}>
           {children}
         </a>
       </NextLink>

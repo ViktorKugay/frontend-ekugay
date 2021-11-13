@@ -2,7 +2,6 @@ import s from './JoinUs.module.scss';
 
 import {Link} from '@atomic/atoms/Link/Link';
 import {Image} from '@atomic/atoms/Image/Image';
-import {AppPath} from '@constants/AppConfig';
 
 import c from './config.json';
 import {Button, Typography} from '@mui/material';
