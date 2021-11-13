@@ -47,17 +47,17 @@ export function MuiThemeProvider({
 }: PropsWithChildren<Props>): JSX.Element {
   const [theme, setTheme] = useState<Theme>();
 
-  useEffect(() => {
-    setTheme(muiTheme);
-  }, []);
+  // useEffect(() => {
+  //   setTheme(muiTheme);
+  // }, []);
 
-  if (!theme) {
-    return <>{children}</>;
-  }
+  // if (!theme) {
+  //   return <>{children}</>;
+  // }
 
   return (
     <StyledEngineProvider>
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <ThemeProvider theme={muiTheme}>{children}</ThemeProvider>
     </StyledEngineProvider>
   );
 }
