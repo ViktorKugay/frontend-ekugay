@@ -308,6 +308,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.6.0":
+  version "7.16.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.3.tgz#b86f0db02a04187a3c17caa77de69840165d42d5"
+  integrity sha512-WBwekcqacdY2e9AF/Q7WLFUWmdJGJTkbjqTjoMDgXkVZ3ZRUvOPsLb5KdwISoQVsbP+DQzVZW4Zhci0DvpbNTQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.16.0", "@babel/template@^7.3.3":
   version "7.16.0"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.16.0.tgz#d16a35ebf4cd74e202083356fab21dd89363ddd6"
@@ -7287,6 +7294,14 @@ tar-stream@^2.1.4:
     fs-constants "^1.0.0"
     inherits "^2.0.3"
     readable-stream "^3.1.1"
+
+telegram-login-button@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/telegram-login-button/-/telegram-login-button-0.0.3.tgz#8000f884b50fca5a71c62101bfd3c86b6906a524"
+  integrity sha512-R5f3z/YANJjFxIBQxagjrVf+1im/u2CecKlTbFjun9MhPAge8KY3gJ8gTp0TuVJ+L5JShlRDdvrGQibjUiUk0Q==
+  dependencies:
+    "@babel/runtime" "^7.6.0"
+    prop-types "^15.7.2"
 
 terminal-link@^2.0.0:
   version "2.1.1"

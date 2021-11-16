@@ -1,9 +1,15 @@
-const RenderTest = () => <p>test</p>;
+import TelegramLoginButton, {TelegramUser} from 'telegram-login-button';
 
 export default function TestPage(): JSX.Element {
   return (
-    <div>
-      <RenderTest />
-    </div>
+    <>
+      <div>
+        <TelegramLoginButton
+          botName="viktorkutestbot"
+          dataOnauth={(user: TelegramUser) => console.log(user)}
+        />
+        ,
+      </div>
+    </>
   );
 }
